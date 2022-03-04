@@ -231,19 +231,19 @@
     padding-bottom: 10%;
 }
 
-.square_animation:hover .square_fill {
+.cardss:hover .square_fill {
     transform: rotate(45deg) translate(0.2em, 0.2em);
     transition: all 0.2s ease;
 }
 
-.square_animation:hover .square_fill2 {
+.cardss:hover .square_fill2 {
     transform: rotate(-30deg) translate(2.9em, -1.2em);
     transition: all 0.2s ease;
     height: 4vw;
     width: 5vw;
 }
 
-.square_animation:hover .square_fill3 {
+.cardss:hover .square_fill3 {
     transition: all 0.2s ease;
     transform: rotate(45deg) translate(-3.0em, -0.2em);
     height: 12vh;
