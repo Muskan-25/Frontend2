@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+.text1 {
+    font-size: 15pt;
+    color: #d1d1d1;
+    font-weight: 700;
+    font-family: 'DM Sans';
+}
+
+.text1:hover {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+
+.navbar-toggler {
+    background-color: #8ad8ff;
+    border-radius: 50px;
+    width: 4rem;
+    height: 4rem;
+    color: #121212;
+}
+
+.nav-link {
+    color: #d1d1d1;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+
+.nav-link::after {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    color: coral;
+    background-color: coral;
+    font-size: medium;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 49%;
+    top: 26%;
+    transition: all 0.2s ease;
+    z-index: 9;
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    z-index: -1;
+}
+
+.text2 {
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.text2:hover {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+
+.text2::after {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    color: coral;
+    background-color: coral;
+    font-size: medium;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 39%;
+    top: 0%;
+    transition: all 0.2s ease;
+    z-index: 9;
+}
+
+.text2:hover:after {
+    opacity: 1;
+    z-index: -1;
+}
+
+.text2::before {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    background-color: #d1d1d1;
+    max-width: 100%;
+    height: 1px;
+    color: #d1d1d1;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.text2:hover::before {
+    left: 100%;
+}
+
+.firstimg {
+    overflow: hidden;
+    max-width: 60vw;
+    height: 80vh;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.firstimg:hover .hero {
+    transform: scale(1.3);
+    transition: all 0.4s ease;
+    filter: contrast(180%);
+}
+
+.testdiv {
+    height: 100vh;
+    padding-right: 40%;
+    background-color: transparent;
+}
+
+.text3 {
+    font-size: 4.5rem;
+    line-height: 0.8em;
+    color: #8ad8ff;
+    margin-bottom: 40px;
+}
+
+.text4 {
+    color: #d1d1d1;
+    margin-bottom: 40px;
+}
+
+.text5 {
+    color: #8ad8ff;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    line-height: 1.2em;
+}
+
+.text6 {
+    color: #d1d1d1;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+.secondimg {
+    overflow: hidden;
+    max-width: 60vw;
+    height: 85vh;
+}
+
+.hero2 {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.square_null {
+    height: 10vh;
+    width: 5vw;
+    border: 1px solid #fff;
+    left: auto;
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+}
+
+.square_null2 {
+    height: 10vh;
+    width: 5vw;
+    border: 1px solid #fff;
+    left: auto;
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    transform: rotate(150deg) translate(-0.2em, 3em);
+}
+
+.square_null3 {
+    height: 12vh;
+    width: 6vw;
+    border: 1px solid #fff;
+    left: auto;
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    transform: translate(-2em, -2em);
+}
+
+.square_fill {
+    height: 10vh;
+    width: 5vw;
+    background-color: rgb(11, 84, 133);
+    transform: translate(-2em, -2em);
+    position: absolute;
+}
+
+.square_fill2 {
+    height: 10vh;
+    width: 5vw;
+    background-color: coral;
+    transform: translate(0.7em, -1.5em);
+    position: absolute;
+}
+
+.square_fill3 {
+    height: 9vh;
+    width: 4.5vw;
+    background-color: rgb(255, 80, 153);
+    transform: translate(-1.3em, -1.37em);
+    position: absolute;
+}
+
+.square_animation {
+    padding-bottom: 10%;
+}
+
+.cardss:hover .square_fill {
+    transform: rotate(45deg) translate(0.2em, 0.2em);
+    transition: all 0.2s ease;
+}
+
+.cardss:hover .square_fill2 {
+    transform: rotate(-30deg) translate(2.9em, -1.2em);
+    transition: all 0.2s ease;
+    height: 4vw;
+    width: 5vw;
+}
+
+.cardss:hover .square_fill3 {
+    transition: all 0.2s ease;
+    transform: rotate(45deg) translate(-3.0em, -0.2em);
+    height: 12vh;
+    width: 6vw;
+}
+
+.cardss {
+    border-left: 1px solid #929292e0;
+    padding-top: 10%;
+}
+
+.shape {
+    background-color: rgb(11, 84, 133);
+    border-radius: 50%;
+    position: absolute;
+    width: 20%;
+    height: 35%;
+    transform: translate(25em, 10em);
+    z-index: 0;
+}
+
+.textdiv {
+    z-index: 0;
+    position: relative;
+    background-color: transparent;
+}
+
+.card {
+    background-color: transparent;
+    border-left: 1px dotted #777676de;
+    /* border-right: 1px dotted #777676de; */
+}
+
+.inner_elements:hover {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(-3em);
+}
