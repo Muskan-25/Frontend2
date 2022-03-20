@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+    <script data-search-pseudo-elements defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <style>
+        body {
+            background-color: navy;
+            height: 100vh;
+        }
+        
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        a {
+            font-size: x-large;
+            color: #fff;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        a::before {
+            content: "";
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.2s ease;
+        }
+        
+        a:hover::before {
+            left: 100%;
+        }
+        
+        a::after {
+            content: "\f4da";
+            font: var(--fa-font-solid);
+            position: absolute;
+            font-size: 4rem;
+            left: 19%;
+            top: -68px;
+            opacity: 0;
+            z-index: -1;
+            color: yellow;
+        }
+        
+        a:hover:after {
+            z-index: -1;
+            opacity: 1;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <a href=""> Hover Me</a>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+</body>
+
+</html>
